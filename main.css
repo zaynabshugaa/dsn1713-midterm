@@ -2,8 +2,9 @@
 
 /* Set custom variables here */
 
-
-
+:root {
+  --primary-color: #2e483a; /* Your custom green color */
+}
 
 
 .navbar-brand {
@@ -31,7 +32,6 @@ h1, h2, h3 {
   height: 800px;
 }
 
-
 #cta {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/cta-bg.png');
   background-repeat: no-repeat;
@@ -43,12 +43,22 @@ h1, h2, h3 {
   height: 400px;
 }
 
-section:not(#hero):not(#cta){
+section:not(#hero):not(#cta) {
   padding: 60px 0;
 }
 
-@media(min-width: 993px){
-  section:not(#hero):not(#cta){
+@media(min-width: 993px) {
+  section:not(#hero):not(#cta) {
     padding: 100px 0;
   }
+}
+
+/* Custom Navbar Styles */
+.navbar {
+  background-color: var(--primary-color) !important;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: #F6F3ED !important;
 }
