@@ -6,10 +6,23 @@
   --primary-color: #2e483a; /* Your custom green color */
 }
 
-
-.navbar-brand {
-  color: #F6F3ED;
+.navbar {
+  background-color: var(--primary-color) !important;
 }
+
+/* What our customers are saying section*/
+.bg-primary {
+  background-color: var(--primary-color) !important;
+}
+
+.bg-primary img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
 
 body {
   font-family: "Sarala", sans-serif;
@@ -21,11 +34,17 @@ h1, h2, h3 {
 
 #hero {
   height: 800px;
-  background-color: #E4E6DB;
   background-image: url(../images/hero-bg-img.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  text-align: top;
+}
+
+#hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #2F4F4F;
 }
 
 #hero .d-flex {
