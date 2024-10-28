@@ -24,7 +24,6 @@
 }
 
 .blockquote-footer {
-  color: #f6f3ed !important;
   font-size: 0.7rem;
 }
 
@@ -32,10 +31,6 @@
 .how-it-works img {
   width: 90px;
   height: 90px;
-}
-
-.how-it-works .text-center p {
-
 }
 
 .btn-primary {
@@ -141,13 +136,9 @@ h1, h2, h3 {
   transition: background-color 0.3s ease;
 }
 
-#cta a:hover {
-  background-color: #3a6740; /* Change button color on hover */
-}
-
 /* Footer Styling */
 footer {
-  background-color: #2f5032; /* Darker green background */
+  background-color: var(--primary-color);
   color: white;
   padding: 20px 0;
 }
@@ -158,25 +149,9 @@ footer .container {
   align-items: center;
 }
 
-footer img {
+.footer img {
   width: 50px; /* Adjust logo size */
   height: auto;
-}
-
-footer a {
-  color: white;
-  margin-right: 15px;
-  text-decoration: none;
-  font-size: 1.2em;
-}
-
-footer a:hover {
-  color: #ddd; /* Lighter shade on hover */
-}
-
-footer svg {
-  width: 120px; /* Desired width */
-  height: auto; /* Maintain aspect ratio */
 }
 
 section:not(#hero):not(#cta) {
