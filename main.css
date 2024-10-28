@@ -43,7 +43,7 @@ h1, h2, h3 {
 .hero-section h1,
 .hero-section p {
   color: #000000;
-  margin: 10px 0;
+  margin: 9px 0;
 }
 
 .hero-section h1 {
@@ -54,6 +54,15 @@ h1, h2, h3 {
   margin: 0 auto;
 }
 
+.hero-section p {
+  font-size: 15px;
+  width: 100%;
+  max-width: 550px;
+  word-wrap: break-word;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 
 .hero-section .btn-primary {
   background-color: var(--primary-color) !important;
@@ -66,7 +75,6 @@ h1, h2, h3 {
   font-size: 14px; 
   height: auto;
 }
-
 
 @media (max-width: 991.98px) {
   .order-lg-1 {
