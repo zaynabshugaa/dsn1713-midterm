@@ -3,11 +3,13 @@
 /* Set custom variables */
 :root {
   --primary-color: #2e483a; /* Custom green color */
+  background-color: #F6F3ED;
 }
 
 /* Body and Typography */
 body {
   font-family: "Sarala", sans-serif;
+  background-color: #F6F3ED;
 }
 
 h1, h2, h3 {
