@@ -49,6 +49,41 @@ h1, h2, h3 {
   color: #000000;
 }
 
+/* Ensure stacking on small screens and two columns on larger screens */
+@media (max-width: 991.98px) { /* This is for screens smaller than lg */
+  .order-lg-1 {
+      order: 1; /* Text first on small screens */
+  }
+  .order-lg-2 {
+      order: 2; /* Image second on small screens */
+  }
+}
+
+/* Large breakpoint and above */
+@media (min-width: 992px) {
+  .order-lg-1 {
+      order: 1; /* Text on the left */
+  }
+  .order-lg-2 {
+      order: 2; /* Image on the right */
+  }
+}
+
+.list-dinner-group {
+  padding: 10px 15px; 
+  background-color: transparent; 
+  list-style: none;
+}
+
+.list-dinner-group .list-group-item {
+  padding: 5px;
+  background: none;
+  border: none; 
+  margin: 5px 0;
+}
+
+
+
 /* CTA Section */
 #cta {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/cta-bg.png');
@@ -95,7 +130,6 @@ h1, h2, h3 {
   transition: background-color 0.3s ease;
   margin: 10px;
 }
-
 
 /* What our customers are saying section */
 .bg-primary {
