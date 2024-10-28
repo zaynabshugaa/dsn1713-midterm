@@ -34,6 +34,29 @@
   height: 90px;
 }
 
+.how-it-works .text-center p {
+
+}
+
+.btn-primary {
+  background-color: #2e483a !important;
+  text-align: center;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+#cta {
+  background-image: url('Images/cta-bg.png'); /* Replace with your image path */
+  background-size: cover; /* This makes the background image cover the entire section */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  padding: 70px; /* Adjust as needed */
+  border-radius: 8px; /* Rounded corners */
+}
+
 body {
   font-family: "Sarala", sans-serif;
 }
@@ -73,6 +96,87 @@ h1, h2, h3 {
 
 #cta .d-flex {
   height: 400px;
+}
+
+/* CTA Section */
+#cta {
+  background-image: url('Images/cta-bg.png');
+  background-size: cover;
+  background-position: center;
+  height: 400px; /* Adjust height based on your preference */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#cta::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay to increase text contrast */
+  z-index: 0;
+}
+
+#cta h2 {
+  color: white;
+  font-size: 2.5em;
+  font-weight: bold;
+  z-index: 1; /* Ensure text is above the overlay */
+  margin: 0;
+}
+
+#cta a {
+  background-color: #2f5032;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  text-decoration: none;
+  z-index: 1;
+  transition: background-color 0.3s ease;
+}
+
+#cta a:hover {
+  background-color: #3a6740; /* Change button color on hover */
+}
+
+/* Footer Styling */
+footer {
+  background-color: #2f5032; /* Darker green background */
+  color: white;
+  padding: 20px 0;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer img {
+  width: 50px; /* Adjust logo size */
+  height: auto;
+}
+
+footer a {
+  color: white;
+  margin-right: 15px;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+footer a:hover {
+  color: #ddd; /* Lighter shade on hover */
+}
+
+footer svg {
+  width: 120px; /* Desired width */
+  height: auto; /* Maintain aspect ratio */
 }
 
 section:not(#hero):not(#cta) {
