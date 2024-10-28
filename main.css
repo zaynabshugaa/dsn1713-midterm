@@ -188,6 +188,15 @@ h1, h2, h3 {
   align-items: center;
 }
 
+.how-it-works .mb-5 p {
+  width: 100%;
+  max-width: 750px;
+  word-wrap: break-word;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 /* Button Styles */
 .btn-primary {
   background-color: var(--primary-color) !important;
