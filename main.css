@@ -23,6 +23,16 @@
   margin-bottom: 15px;
 }
 
+.blockquote-footer {
+  color: #f6f3ed !important;
+  font-size: 0.7rem;
+}
+
+/* How it works section*/
+.how-it-works img {
+  width: 90px;
+  height: 90px;
+}
 
 body {
   font-family: "Sarala", sans-serif;
@@ -32,20 +42,23 @@ h1, h2, h3 {
   font-family: "Merriweather", serif;
 }
 
-#hero {
-  height: 800px;
-  background-image: url(../images/hero-bg-img.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+/* Hero Section */
+
+.hero-section {
   text-align: top;
 }
 
-#hero h1 {
-  font-size: 48px;
+.hero-section h1 {
+  color: #000000;
+  font-size: 30px;
   margin-bottom: 20px;
-  color: #2F4F4F;
+  text-align: top;
 }
+
+.hero-section p {
+  color: #000000;
+}
+
 
 #hero .d-flex {
   height: 800px;
