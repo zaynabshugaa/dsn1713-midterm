@@ -82,7 +82,10 @@ h1, h2, h3 {
   margin: 5px 0;
 }
 
-
+.col-lg-6 p {
+  font-size: 1em;
+  padding-left: 5px;
+}
 
 /* CTA Section */
 #cta {
