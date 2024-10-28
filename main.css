@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Sarala:wght@400;700&display=swap');
 
-/* Set custom variables */
 :root {
   --primary-color: #2e483a; /* Custom green color */
+  --primary-color-rgb: 46, 72, 58; /* RGB equivalent of #2e483a */
   background-color: #F6F3ED;
 }
 
-/* Body and Typography */
+.some-element {
+  background-color: rgba(var(--primary-color-rgb), 0.8); /* 80% opacity */
+}
+
 body {
   font-family: "Sarala", sans-serif;
   background-color: #F6F3ED;
