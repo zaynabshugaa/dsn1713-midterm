@@ -184,6 +184,10 @@ h1, h2, h3 {
   height: 90px;
 }
 
+.how-it-works .btn-primary {
+  align-items: center;
+}
+
 /* Button Styles */
 .btn-primary {
   background-color: var(--primary-color) !important;
@@ -194,6 +198,11 @@ h1, h2, h3 {
   justify-content: center;
   align-items: center;
 }
+
+    .custom-hr {
+      color: #000000; 
+      
+    }
 
 /* Footer Styling */
 footer {
