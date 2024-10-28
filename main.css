@@ -10,6 +10,11 @@
   background-color: var(--primary-color) !important;
 }
 
+.navbar .nav-logo {
+  width: 20px;
+  height: auto;
+}
+
 /* What our customers are saying section*/
 .bg-primary {
   background-color: var(--primary-color) !important;
@@ -61,6 +66,7 @@ h1, h2, h3 {
 }
 
 /* Hero Section */
+
 
 .hero-section {
   text-align: top;
