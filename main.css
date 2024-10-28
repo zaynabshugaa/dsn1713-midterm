@@ -1,13 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Sarala:wght@400;700&display=swap');
 
-/* Set custom variables here */
-
+/* Set custom variables */
 :root {
-  --primary-color: #2e483a; /* Your custom green color */
+  --primary-color: #2e483a; /* Custom green color */
 }
 
+/* Body and Typography */
+body {
+  font-family: "Sarala", sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: "Merriweather", serif;
+}
+
+/* Navbar */
 .navbar {
   background-color: var(--primary-color) !important;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: #F6F3ED !important;
 }
 
 .navbar .nav-logo {
@@ -15,7 +29,72 @@
   height: auto;
 }
 
-/* What our customers are saying section*/
+/* Hero Section */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  text-align: center;
+}
+
+.hero-section h1 {
+  color: #000000;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  color: #000000;
+}
+
+/* CTA Section */
+#cta {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/cta-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 400px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 0%;
+}
+
+#cta::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2); /* Dark overlay for text contrast */
+  z-index: 0;
+}
+
+#cta h2 {
+  color: white;
+  font-size: 2.5em;
+  font-weight: bold;
+  z-index: 1;
+  margin: 0;
+}
+
+#cta a {
+  background-color: #2f5032;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  text-decoration: none;
+  z-index: 1;
+  transition: background-color 0.3s ease;
+}
+
+/* What our customers are saying section */
 .bg-primary {
   background-color: var(--primary-color) !important;
 }
@@ -32,14 +111,15 @@
   font-size: 0.7rem;
 }
 
-/* How it works section*/
+/* How it works section */
 .how-it-works img {
   width: 90px;
   height: 90px;
 }
 
+/* Button Styles */
 .btn-primary {
-  background-color: #2e483a !important;
+  background-color: var(--primary-color) !important;
   text-align: center;
   border: none;
   padding: 10px 20px;
@@ -48,105 +128,12 @@
   align-items: center;
 }
 
-#cta {
-  background-image: url('Images/cta-bg.png'); /* Replace with your image path */
-  background-size: cover; /* This makes the background image cover the entire section */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
-  padding: 70px; /* Adjust as needed */
-  border-radius: 8px; /* Rounded corners */
-}
-
-body {
-  font-family: "Sarala", sans-serif;
-}
-
-h1, h2, h3 {
-  font-family: "Merriweather", serif;
-}
-
-/* Hero Section */
-
-
-.hero-section {
-  text-align: top;
-}
-
-.hero-section h1 {
-  color: #000000;
-  font-size: 30px;
-  margin-bottom: 20px;
-  text-align: top;
-}
-
-.hero-section p {
-  color: #000000;
-}
-
-
-#hero .d-flex {
-  height: 800px;
-}
-
-#cta {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/cta-bg.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-#cta .d-flex {
-  height: 400px;
-}
-
-/* CTA Section */
-#cta {
-  background-image: url('Images/cta-bg.png');
-  background-size: cover;
-  background-position: center;
-  height: 400px; /* Adjust height based on your preference */
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-#cta::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay to increase text contrast */
-  z-index: 0;
-}
-
-#cta h2 {
-  color: white;
-  font-size: 2.5em;
-  font-weight: bold;
-  z-index: 1; /* Ensure text is above the overlay */
-  margin: 0;
-}
-
-#cta a {
-  background-color: #2f5032;
-  color: white;
-  padding: 15px 30px;
-  font-size: 1.2em;
-  border-radius: 5px;
-  text-decoration: none;
-  z-index: 1;
-  transition: background-color 0.3s ease;
-}
-
 /* Footer Styling */
 footer {
   background-color: var(--primary-color);
   color: white;
   padding: 20px 0;
+  margin-top: 0%;
 }
 
 footer .container {
@@ -155,11 +142,17 @@ footer .container {
   align-items: center;
 }
 
-.footer img {
-  width: 50px; /* Adjust logo size */
+.footer .footer-logo {
+  width: 20px;
   height: auto;
 }
 
+.footer .socails-logo {
+  width: 20px;
+  height: auto;
+}
+
+/* Section Padding */
 section:not(#hero):not(#cta) {
   padding: 60px 0;
 }
@@ -168,14 +161,4 @@ section:not(#hero):not(#cta) {
   section:not(#hero):not(#cta) {
     padding: 100px 0;
   }
-}
-
-/* Custom Navbar Styles */
-.navbar {
-  background-color: var(--primary-color) !important;
-}
-
-.navbar .navbar-brand,
-.navbar .nav-link {
-  color: #F6F3ED !important;
 }
