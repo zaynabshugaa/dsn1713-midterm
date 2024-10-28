@@ -33,23 +33,38 @@ h1, h2, h3 {
 .hero-section {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   height: 600px;
   text-align: center;
+  padding-top: 20px;
+}
+
+/* Ensure the text has a top margin to separate from the edge */
+.hero-section h1,
+.hero-section p {
+  color: #000000;
+  margin: 10px 0;
 }
 
 .hero-section h1 {
-  color: #000000;
-  font-size: 30px;
-  margin-bottom: 20px;
+  font-size: 25px;
 }
 
-.hero-section p {
-  color: #000000;
+.hero-section .btn-primary {
+  background-color: var(--primary-color) !important; /* Keeps the same background color */
+  text-align: center;
+  border: none;
+  padding: 7px 15px; /* Adjusted padding for a slightly larger button */
+  border-radius: 5px; /* Same border-radius */
+  justify-content: center;
+  align-items: center;
+  font-size: 14px; /* Adjusted font size for better visibility */
+  height: auto; /* Allow height to adjust based on content */
 }
 
-/* Ensure stacking on small screens and two columns on larger screens */
+
+
 @media (max-width: 991.98px) { /* This is for screens smaller than lg */
   .order-lg-1 {
       order: 1; /* Text first on small screens */
@@ -59,7 +74,6 @@ h1, h2, h3 {
   }
 }
 
-/* Large breakpoint and above */
 @media (min-width: 992px) {
   .order-lg-1 {
       order: 1; /* Text on the left */
